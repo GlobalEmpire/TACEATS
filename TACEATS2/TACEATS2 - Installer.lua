@@ -20,7 +20,7 @@ if filesystem.exists("/lib/bagel.lua") == true then
 else
     print("Bagel.lua is not found, attempting to continue.")
     if component.isAvailable("internet") == true then
-        AcquirePaste("https://raw.githubusercontent.com/MajorGeneralRelativity/OC-Programs/master/Libraries/bagel.lua", "/lib/bagel.lua")
+        AcquirePaste("https://raw.githubusercontent.com/GlobalEmpire/OC-Programs/master/Libraries/bagel.lua", "/lib/bagel.lua")
         print("Please reboot and re-run this program.")
         os.exit()
     else
@@ -43,9 +43,9 @@ if filesystem.exists("/usr/programs/TMain.lua") and filesystem.exists("/usr/prog
 else
     print("TACEATS files missing, attempting download now")
     if component.isAvailable("internet") == true then
-        AcquirePaste("https://raw.githubusercontent.com/MajorGeneralRelativity/OC-Programs/master/Programs/TMain.lua", "/usr/programs/TMain.lua")
-        AcquirePaste("https://raw.githubusercontent.com/MajorGeneralRelativity/OC-Programs/master/Programs/TIdent.lua", "/usr/programs/TIdent.lua")
-        AcquirePaste("https://raw.githubusercontent.com/MajorGeneralRelativity/OC-Programs/master/Programs/TFiCo.lua", "/usr/programs/TFiCo.lua")
+        AcquirePaste("https://raw.githubusercontent.com/GlobalEmpire/TACEATS/master/TACEATS2/TMain.lua", "/usr/programs/TMain.lua")
+        AcquirePaste("https://raw.githubusercontent.com/GlobalEmpire/TACEATS/master/TACEATS2/TIdent.lua", "/usr/programs/TIdent.lua")
+        AcquirePaste("https://raw.githubusercontent.com/GlobalEmpire/TACEATS/master/TACEATS2/TFiCo.lua", "/usr/programs/TFiCo.lua")
     else
         print("Internet card not available, please insert one, and then re-run this program.")
     end
