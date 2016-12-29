@@ -1,4 +1,4 @@
 # OC-Programs
-All my OpenComputers programs that are in a state where they could actually do something.
+Home of TACEATS and all its derivatives
 
 Please read the license
