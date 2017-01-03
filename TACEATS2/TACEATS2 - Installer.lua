@@ -24,7 +24,7 @@ else
         print("Please reboot and re-run this program.")
         os.exit()
     else
-        print("Internet not available or unkown error; cannot continue.")
+        print("Internet not available or unknown error; cannot continue.")
     end
 end
 
@@ -37,11 +37,11 @@ if filesystem.exists("/usr/programs/TMain.lua") and filesystem.exists("/usr/prog
         shell.execute("/usr/programs/TIdent.lua")
         shell.execute("/usr/programs/TMain.lua")
     else
-        print("An altered copy of TACEATS2 is present on this system. Preventing execution to secure against malicious code injection. Please report to whomever you got this program from, and to MajGenRelativity or Gavle on irc.esper.net")
+        print("An altered copy of TACEATS2 is present on this system. Preventing execution to secure against data corruption. Please report to whomever you got this program from, and to MajGenRelativity or Gavle on irc.esper.net")
         print("Have a good day!")
     end
 else
-    print("TACEATS files missing, attempting download now")
+    print("TACEATS files missing; attempting download now")
     if component.isAvailable("internet") == true then
         AcquirePaste("https://raw.githubusercontent.com/GlobalEmpire/TACEATS/master/TACEATS2/TMain.lua", "/usr/programs/TMain.lua")
         AcquirePaste("https://raw.githubusercontent.com/GlobalEmpire/TACEATS/master/TACEATS2/TIdent.lua", "/usr/programs/TIdent.lua")
